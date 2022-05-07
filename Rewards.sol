@@ -33,3 +33,4 @@ contract TestdRewards is ERC20, ERC20Burnable, Ownable {
   function removeController(address controller) external onlyOwner {
     controllers[controller] = false;
   }
+}
