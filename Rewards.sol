@@ -6,11 +6,11 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
 
-contract Rewards is ERC20, ERC20Burnable, Ownable {
+contract TestdRewards is ERC20, ERC20Burnable, Ownable {
 
   mapping(address => bool) controllers;
   
-  constructor() ERC20("N2DRewards", "N2DR") { }
+  constructor() ERC20("TestdRewards", "TestdR") { }
 
   function mint(address to, uint256 amount) external {
     require(controllers[msg.sender], "Only controllers can mint");
@@ -33,4 +33,3 @@ contract Rewards is ERC20, ERC20Burnable, Ownable {
   function removeController(address controller) external onlyOwner {
     controllers[controller] = false;
   }
-}
