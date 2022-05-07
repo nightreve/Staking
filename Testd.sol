@@ -1,8 +1,9 @@
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity >=0.8.9 <0.9.0;
 
-import 'https://github.com/nightreve/Staking/blob/main/ERC721A.sol';
+import 'erc721a/contracts/ERC721A.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 import '@openzeppelin/contracts/security/ReentrancyGuard.sol';
