@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT LICENSE
 
 pragma solidity 0.8.4;
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
 
 contract TestdRewards is ERC20, ERC20Burnable, Ownable {
