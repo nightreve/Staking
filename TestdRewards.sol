@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT LICENSE
 
-pragma solidity 0.8.4;
-//import "@openzeppelin/contracts/access/Ownable.sol";
+pragma solidity ^0.8.4;
+import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
@@ -10,7 +10,7 @@ contract Testd5Rewards is ERC20, ERC20Burnable, Ownable {
 
   mapping(address => bool) controllers;
   
-  constructor() ERC20("TestdRewards", "TestdR") { }
+  constructor() ERC20("Testd5Rewards", "Testd5R") { }
 
   function mint(address to, uint256 amount) external {
     require(controllers[msg.sender], "Only controllers can mint");
