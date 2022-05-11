@@ -10,7 +10,7 @@ contract Testd7Rewards is ERC20, ERC20Burnable, Ownable {
 
   mapping(address => bool) controllers;
   
-  constructor() ERC20("Testd7Rewards", "TD6") { }
+  constructor() ERC20("Testd7Rewards", "TD7") { }
 
   function mint(address to, uint256 amount) external {
     require(controllers[msg.sender], "Only controllers can mint");
