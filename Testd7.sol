@@ -1141,7 +1141,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 pragma solidity ^0.8.0;
 
-contract Testd6 is ERC721Enumerable, Ownable {
+contract Testd7 is ERC721Enumerable, Ownable {
     using Strings for uint256;
     string public baseURI;
     string public baseExtension = ".json";
@@ -1150,7 +1150,7 @@ contract Testd6 is ERC721Enumerable, Ownable {
     uint256 public maxMintAmount = 5;
     bool public paused = false;
 
-    constructor() ERC721("Testd6 NFT Collection", "TD6") {}
+    constructor() ERC721("Testd7 NFT Collection", "TD7") {}
         // internal
         function _baseURI() internal view virtual override returns (string memory) {
         return "ipfs://QmfBpUqG6xpQ6kiswqWUYhvLi5ypnW2fW7spPJcLjvrqg7/";
